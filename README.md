@@ -1,2 +1,3 @@
-# java_exercises
-java exercises and examples
+## A Collection of Java Exercises
+
+* Concurrency and Threading
