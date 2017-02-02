@@ -1,4 +1,4 @@
-## Thread Locking With ReentrantLock & Runnable
+# Thread Locking With ReentrantLock & Runnable
 
 An example of a sequenced, multi-threaded application using *ReentrantLock* and the *Runnable* interface.
 

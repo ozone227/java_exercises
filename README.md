@@ -2,3 +2,4 @@
 
 * Runnable Threads
 * Thread Locking With ReentrantLock & Runnable
+* Getters & Setters
