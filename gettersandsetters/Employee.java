@@ -1,7 +1,8 @@
 /**
- * @author Ryan Bond 
+ * @author Ryan Bond
  * https://github.com/ozone227 - drbond@gmail.com
  */
+ 
 public class Employee {
 	/**
 	 * Create Employee Fields

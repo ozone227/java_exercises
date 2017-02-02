@@ -1,7 +1,6 @@
 /**
- * @author Ryan Bond - donnie.bond@csuglobal.edu
+ * @author Ryan Bond
  * https://github.com/ozone227 - drbond@gmail.com
- * Week 1 - Critical Thinking
  *
  *
  */
