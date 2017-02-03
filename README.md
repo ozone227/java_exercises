@@ -5,3 +5,4 @@
 * Getters & Setters
 * Basic Swing Example
 * Using Swing and Time
+* Scanner to Array
