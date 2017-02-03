@@ -7,3 +7,4 @@
 * Using Swing and Time
 * Scanner to Array
 * HashMap Intro
+* Sorting ArrayList
