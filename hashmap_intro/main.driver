@@ -1,0 +1,87 @@
+/* HashMap Intro
+* @author Ryan Bond
+* drbond@gmail.com - www.github.com/ozone227/
+*/
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Main {
+    HashMap<String,String> map;
+
+    public Main(){
+        map = new HashMap<String,String>();
+        map.put("Fred","88");
+        map.put("Sally","83");
+        map.put("Bob","98");
+        map.put("Billy","78");
+    }
+
+    // Print the contents of the HashMap
+    public void print(){
+        for (String key : map.keySet()) {
+        	String KeySet = key + " :" + map.get(key);
+        	System.out.println(KeySet);
+
+        	//System.out.println(key + " :" + map.get(key));
+        }
+    }
+
+    // Methods for Add, Remove, & Update.
+    protected void add(String name, String grade){
+        map.put(name, grade);
+    }
+
+    protected void remove(String name, String grade){
+        map.remove(name, grade);
+    }
+
+	protected void change(String name, String grade) {
+		map.put(name, grade);
+	}
+
+	// Prompt User and Collect Inputs
+    public void interact(){
+        String line;
+        Scanner stdin = new Scanner(System.in);
+
+        String menu = "Grades HashMap Program.\n" +
+                      "Enter: <add> <student_name> <grade> to add a grade.\n" +
+                      "Enter: <remove> <student_name> <grade> to remove a grade.\n" +
+                      "Enter: <change> <student_name> <grade> to change a grade.\n" +
+                      "Enter: <print> to print out all grades.\n" +
+                      "Enter: \"exit\" to exit program.\n";
+
+        System.out.println(menu);
+
+        while(stdin.hasNextLine() && !( line = stdin.nextLine() ).equals( "" ))
+        {
+            String[] tokens = line.split(" ");
+            if(tokens[0].contains("exit")){ System.exit(0); }
+
+            if(tokens[0].contains("add")){
+                this.add(tokens[1],tokens[2]);
+
+            }else if(tokens[0].contains("remove")){
+                this.remove(tokens[1],tokens[2]);
+
+            }else if(tokens[0].contains("change")){
+                this.change(tokens[1],tokens[2]);
+
+            }else if(tokens[0].contains("print")){
+                this.print();
+                System.out.println();
+            }else{
+                System.out.println("Input Error. Program exiting.");
+                System.exit(1);
+            }
+
+          //  System.out.println(menu);
+        }
+        stdin.close();
+    }
+
+	public static void main(String[] args) {
+        new Main().interact();;
+    }
+}
