@@ -1,4 +1,4 @@
-** Overview **
+**Overview**
 
 Demonstrate an understanding of working with bags in Java by implementing a class called ClothingBag that implements the BagInterface<MyType> in Java.  The program will store corresponding items for a clothing boutique, specifically, the program should consider an item name and price.
 
