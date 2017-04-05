@@ -12,3 +12,4 @@
 * Postfix Calculator
 * Recursion
 * Selection Sort
+* Quicksort
